@@ -1,0 +1,3 @@
+schematics MySensorsGW.sch
+output-name MySensorsGW
+elements-dir ~/gits/GitHub/gEDAlib/footprints

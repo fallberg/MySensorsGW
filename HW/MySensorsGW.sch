@@ -1,0 +1,708 @@
+v 20130925 2
+T 57000 45100 15 10 1 0 0 0 1
+MySensors Gateway
+T 57400 44500 15 10 1 0 0 0 1
+MySensorsGW.sch
+T 58500 44200 15 10 1 0 0 0 1
+1
+T 59000 44200 15 10 1 0 0 0 1
+1
+T 61400 44500 15 10 1 0 0 0 1
+1.0
+T 61400 44200 15 10 1 0 0 0 1
+Patrick Fallberg
+C 48000 44100 0 0 0 title-A3.sym
+C 53000 47600 1 0 0 gnd-1.sym
+C 57200 50700 1 0 0 led-2.sym
+{
+T 57400 50900 5 10 1 1 0 0 1
+refdes=D1
+T 57300 51300 5 10 0 0 0 0 1
+device=LED
+T 57700 50800 5 10 1 1 0 0 1
+comment=Red
+T 57200 50700 5 10 0 0 0 0 1
+footprint=LED3
+}
+C 59200 47500 1 0 0 nano-1.sym
+{
+T 60200 50300 5 10 0 1 0 0 1
+footprint=DIP30
+T 60200 51100 5 10 0 1 0 0 1
+device=ARDUINONANO
+T 61900 54500 5 10 1 1 0 0 1
+refdes=U1
+}
+G 62200 44709 2200 756 0 0 0
+/home/fallberg/gits/GitHub/MySensorsGW/HW/open_source_hardware_logo-t.png
+L 62000 45300 61600 45300 15 0 0 0 -1 -1
+A 61500 44900 100 0 90 15 0 0 0 -1 -1
+A 62100 44900 100 90 90 15 0 0 0 -1 -1
+A 62100 45300 100 180 90 15 0 0 0 -1 -1
+A 61500 45300 100 270 90 15 0 0 0 -1 -1
+L 62000 44900 61600 44900 15 0 0 0 -1 -1
+L 61500 45200 61500 45000 15 0 0 0 -1 -1
+L 62100 45200 62100 45000 15 0 0 0 -1 -1
+T 61800 45100 15 13 1 0 0 4 1
+PF
+C 57200 49900 1 0 0 led-2.sym
+{
+T 57400 50100 5 10 1 1 0 0 1
+refdes=D3
+T 57300 50500 5 10 0 0 0 0 1
+device=LED
+T 57700 50000 5 10 1 1 0 0 1
+comment=Green
+T 57200 49900 5 10 0 0 0 0 1
+footprint=LED3
+}
+C 57200 50300 1 0 0 led-2.sym
+{
+T 57400 50500 5 10 1 1 0 0 1
+refdes=D2
+T 57300 50900 5 10 0 0 0 0 1
+device=LED
+T 57700 50400 5 10 1 1 0 0 1
+comment=Yellow
+T 57200 50300 5 10 0 0 0 0 1
+footprint=LED3
+}
+C 58300 50700 1 0 0 resistor-2.sym
+{
+T 58700 51050 5 10 0 0 0 0 1
+device=RESISTOR
+T 58600 50900 5 10 1 1 0 0 1
+refdes=R1
+T 58700 50800 5 10 1 1 0 4 1
+value=330
+T 58300 50700 5 10 0 0 0 0 1
+footprint=AXIAL_LAY 400
+}
+C 58300 49900 1 0 0 resistor-2.sym
+{
+T 58700 50250 5 10 0 0 0 0 1
+device=RESISTOR
+T 58600 50100 5 10 1 1 0 0 1
+refdes=R3
+T 58700 50000 5 10 1 1 0 4 1
+value=330
+T 58300 49900 5 10 0 0 0 0 1
+footprint=AXIAL_LAY 400
+}
+C 58300 50300 1 0 0 resistor-2.sym
+{
+T 58700 50650 5 10 0 0 0 0 1
+device=RESISTOR
+T 58600 50500 5 10 1 1 0 0 1
+refdes=R2
+T 58700 50400 5 10 1 1 0 4 1
+value=330
+T 58300 50300 5 10 0 0 0 0 1
+footprint=AXIAL_LAY 400
+}
+C 61500 54700 1 0 0 3.3V-plus-1.sym
+C 61100 54700 1 0 0 5V-plus-1.sym
+C 57000 50800 1 0 0 5V-plus-1.sym
+N 57200 50800 57200 50000 4
+C 51200 46100 1 0 0 5V-plus-1.sym
+C 49700 44700 1 0 0 gnd-1.sym
+C 50500 45000 1 0 0 gnd-1.sym
+C 51300 44700 1 0 0 gnd-1.sym
+C 49600 46100 1 0 0 generic-power.sym
+{
+T 49800 46350 5 10 1 1 0 3 1
+net=+3.3VRF:1
+}
+C 57900 52700 1 0 0 resistor-2.sym
+{
+T 58300 53050 5 10 0 0 0 0 1
+device=RESISTOR
+T 58200 52900 5 10 1 1 0 0 1
+refdes=R5
+T 58300 52800 5 10 1 1 0 4 1
+value=0
+T 58500 52800 5 10 1 1 0 4 1
+comment=NM
+T 57900 52700 5 10 0 0 0 0 1
+footprint=AXIAL_LAY 400
+}
+C 61200 47400 1 0 0 gnd-1.sym
+C 49500 45000 1 90 0 capacitor-1.sym
+{
+T 48800 45200 5 10 0 0 90 0 1
+device=CAPACITOR
+T 49300 45700 5 10 1 1 180 0 1
+refdes=C3
+T 48600 45200 5 10 0 0 90 0 1
+symversion=0.1
+T 49300 45200 5 10 1 1 0 0 1
+value=100p
+T 49500 45000 5 10 0 0 0 0 1
+footprint=CK05_type_Capacitor
+}
+C 49200 44700 1 0 0 gnd-1.sym
+C 49000 45000 1 90 0 capacitor-1.sym
+{
+T 48300 45200 5 10 0 0 90 0 1
+device=CAPACITOR
+T 48800 45700 5 10 1 1 180 0 1
+refdes=C4
+T 48100 45200 5 10 0 0 90 0 1
+symversion=0.1
+T 48800 45200 5 10 1 1 0 0 1
+value=10p
+T 49000 45000 5 10 0 0 0 0 1
+footprint=CK05_type_Capacitor
+}
+C 48700 44700 1 0 0 gnd-1.sym
+N 48800 45900 49800 45900 4
+N 51400 45900 51400 46100 4
+N 49800 45900 49800 46100 4
+B 48400 44500 3500 2300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 48500 46600 9 10 1 0 0 0 1
+RF power supply
+C 57900 53100 1 0 0 resistor-2.sym
+{
+T 58300 53450 5 10 0 0 0 0 1
+device=RESISTOR
+T 58200 53300 5 10 1 1 0 0 1
+refdes=R4
+T 58300 53200 5 10 1 1 0 4 1
+value=0
+T 58500 53200 5 10 1 1 0 4 1
+comment=NM
+T 57900 53100 5 10 0 0 0 0 1
+footprint=AXIAL_LAY 400
+}
+N 58800 52800 59400 52800 4
+N 58800 53200 58800 52800 4
+C 63100 53700 1 180 0 input-1.sym
+{
+T 63100 53500 5 10 1 1 180 8 1
+netname=RES
+T 63100 53700 5 10 0 0 0 0 1
+graphical=1
+T 63100 53700 5 10 0 0 0 0 1
+net=RES:1
+T 63100 53700 5 10 0 0 0 0 1
+device=none
+}
+C 54100 47800 1 0 0 output-1.sym
+{
+T 54900 47800 5 10 1 1 0 0 1
+netname=RES
+T 54100 47800 5 10 0 0 0 0 1
+graphical=1
+T 54100 47800 5 10 0 0 0 0 1
+net=RES:1
+T 54100 47800 5 10 0 0 0 0 1
+device=none
+}
+B 52800 47500 3000 900 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 52900 48200 9 10 1 0 0 0 1
+Reset
+C 59400 49300 1 180 0 output-1.sym
+{
+T 58600 49100 5 10 1 1 180 2 1
+netname=MOSI
+T 59400 49300 5 10 0 0 0 0 1
+graphical=1
+T 59400 49300 5 10 0 0 0 0 1
+net=MOSI:1
+T 59400 49300 5 10 0 0 0 0 1
+device=none
+}
+C 57100 53100 1 0 0 input-1.sym
+{
+T 57100 53100 5 10 1 1 0 6 1
+netname=ETH_IRQ
+T 57100 53100 5 10 0 0 0 0 1
+graphical=1
+T 57100 53100 5 10 0 0 0 0 1
+net=ETH_IRQ:1
+T 57100 53100 5 10 0 0 0 0 1
+device=none
+}
+C 53200 48800 1 0 0 gnd-1.sym
+C 54300 49000 1 0 0 output-1.sym
+{
+T 55100 49000 5 10 1 1 0 0 1
+netname=INC
+T 54300 49000 5 10 0 0 0 0 1
+graphical=1
+T 54300 49000 5 10 0 0 0 0 1
+net=INC:1
+T 54300 49000 5 10 0 0 0 0 1
+device=none
+}
+B 52800 48700 3000 900 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 52900 49400 9 10 1 0 0 0 1
+Inclusion
+C 58600 52300 1 0 0 input-1.sym
+{
+T 58600 52300 5 10 1 1 0 6 1
+netname=INC
+T 58600 52300 5 10 0 0 0 0 1
+graphical=1
+T 58600 52300 5 10 0 0 0 0 1
+net=INC:1
+T 58600 52300 5 10 0 0 0 0 1
+device=none
+}
+N 62300 53600 62400 53600 4
+C 59400 51700 1 180 0 output-1.sym
+{
+T 58600 51500 5 10 1 1 180 2 1
+netname=RF_CE
+T 59400 51700 5 10 0 0 0 0 1
+graphical=1
+T 59400 51700 5 10 0 0 0 0 1
+net=RF_CE:1
+T 59400 51700 5 10 0 0 0 0 1
+device=none
+}
+C 59400 51300 1 180 0 output-1.sym
+{
+T 58600 51100 5 10 1 1 180 2 1
+netname=RF_CSN
+T 59400 51300 5 10 0 0 0 0 1
+graphical=1
+T 59400 51300 5 10 0 0 0 0 1
+net=RF_CSN:1
+T 59400 51300 5 10 0 0 0 0 1
+device=none
+}
+C 59400 48500 1 180 0 output-1.sym
+{
+T 58600 48300 5 10 1 1 180 2 1
+netname=SCK
+T 59400 48500 5 10 0 0 0 0 1
+graphical=1
+T 59400 48500 5 10 0 0 0 0 1
+net=SCK:1
+T 59400 48500 5 10 0 0 0 0 1
+device=none
+}
+C 58600 48700 1 0 0 input-1.sym
+{
+T 58600 48700 5 10 1 1 0 6 1
+netname=MISO
+T 58600 48700 5 10 0 0 0 0 1
+graphical=1
+T 58600 48700 5 10 0 0 0 0 1
+net=MISO:1
+T 58600 48700 5 10 0 0 0 0 1
+device=none
+}
+C 59400 49700 1 180 0 output-1.sym
+{
+T 58600 49500 5 10 1 1 180 2 1
+netname=ETH_CE
+T 59400 49700 5 10 0 0 0 0 1
+graphical=1
+T 59400 49700 5 10 0 0 0 0 1
+net=ETH_CE:1
+T 59400 49700 5 10 0 0 0 0 1
+device=none
+}
+C 59400 52100 1 180 0 output-1.sym
+{
+T 58600 51900 5 10 1 1 180 2 1
+netname=ETH_SPI_EN
+T 59400 52100 5 10 0 0 0 0 1
+graphical=1
+T 59400 52100 5 10 0 0 0 0 1
+net=ETH_SPI_EN:1
+T 59400 52100 5 10 0 0 0 0 1
+device=none
+}
+C 48700 47600 1 0 0 connector10-1.sym
+{
+T 49300 50600 5 10 1 1 0 0 1
+refdes=CONN2
+T 48600 50800 5 10 1 1 0 0 1
+device=W5100
+T 48700 47600 5 10 0 0 0 0 1
+documentation=http://www.ebay.com/itm/280924809892
+T 48700 47600 5 10 0 0 0 0 1
+footprint=w5100
+}
+C 48700 52300 1 0 0 connector8-1.sym
+{
+T 49300 54700 5 10 1 1 0 0 1
+refdes=CONN1
+T 48600 54900 5 10 1 1 0 0 1
+device=NRF24L01
+T 48700 52300 5 10 0 0 0 0 1
+documentation=http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf
+T 48700 52300 5 10 0 0 0 0 1
+footprint=HEADER8_2
+}
+C 50300 54300 1 0 0 gnd-1.sym
+C 50700 54300 1 0 0 generic-power.sym
+{
+T 50900 54550 5 10 1 1 0 3 1
+net=+3.3VRF:1
+}
+N 50900 54300 50400 54300 4
+C 51200 54100 1 180 0 input-1.sym
+{
+T 51200 53900 5 10 1 1 180 8 1
+netname=RF_CE
+T 51200 54100 5 10 0 0 0 0 1
+graphical=1
+T 51200 54100 5 10 0 0 0 0 1
+net=RF_CE:1
+T 51200 54100 5 10 0 0 0 0 1
+device=none
+}
+C 51200 53800 1 180 0 input-1.sym
+{
+T 51200 53600 5 10 1 1 180 8 1
+netname=RF_CSN
+T 51200 53800 5 10 0 0 0 0 1
+graphical=1
+T 51200 53800 5 10 0 0 0 0 1
+net=RF_CSN:1
+T 51200 53800 5 10 0 0 0 0 1
+device=none
+}
+C 50400 50400 1 0 0 output-1.sym
+{
+T 51200 50400 5 10 1 1 0 0 1
+netname=MISO
+T 50400 50400 5 10 0 0 0 0 1
+graphical=1
+T 50400 50400 5 10 0 0 0 0 1
+net=MISO:1
+T 50400 50400 5 10 0 0 0 0 1
+device=none
+}
+C 51200 50300 1 180 0 input-1.sym
+{
+T 51200 50100 5 10 1 1 180 8 1
+netname=MOSI
+T 51200 50300 5 10 0 0 0 0 1
+graphical=1
+T 51200 50300 5 10 0 0 0 0 1
+net=MOSI:1
+T 51200 50300 5 10 0 0 0 0 1
+device=none
+}
+C 51200 50000 1 180 0 input-1.sym
+{
+T 51200 49800 5 10 1 1 180 8 1
+netname=ETH_CE
+T 51200 50000 5 10 0 0 0 0 1
+graphical=1
+T 51200 50000 5 10 0 0 0 0 1
+net=ETH_CE:1
+T 51200 50000 5 10 0 0 0 0 1
+device=none
+}
+C 51200 49700 1 180 0 input-1.sym
+{
+T 51200 49500 5 10 1 1 180 8 1
+netname=SCK
+T 51200 49700 5 10 0 0 0 0 1
+graphical=1
+T 51200 49700 5 10 0 0 0 0 1
+net=SCK:1
+T 51200 49700 5 10 0 0 0 0 1
+device=none
+}
+C 51200 49400 1 180 0 input-1.sym
+{
+T 51200 49200 5 10 1 1 180 8 1
+netname=ETH_SPI_EN
+T 51200 49400 5 10 0 0 0 0 1
+graphical=1
+T 51200 49400 5 10 0 0 0 0 1
+net=ETH_SPI_EN:1
+T 51200 49400 5 10 0 0 0 0 1
+device=none
+}
+C 50400 47700 1 0 0 output-1.sym
+{
+T 51200 47700 5 10 1 1 0 0 1
+netname=ETH_IRQ
+T 50400 47700 5 10 0 0 0 0 1
+graphical=1
+T 50400 47700 5 10 0 0 0 0 1
+net=ETH_IRQ:1
+T 50400 47700 5 10 0 0 0 0 1
+device=none
+}
+C 51200 48200 1 180 0 input-1.sym
+{
+T 51200 48000 5 10 1 1 180 8 1
+netname=RES
+T 51200 48200 5 10 0 0 0 0 1
+graphical=1
+T 51200 48200 5 10 0 0 0 0 1
+net=RES:1
+T 51200 48200 5 10 0 0 0 0 1
+device=none
+}
+C 50900 48400 1 0 0 3.3V-plus-1.sym
+N 51100 48400 50400 48400 4
+B 48400 47500 4100 3700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 48500 51000 9 10 1 0 0 0 1
+Ethernet
+B 48400 51600 4100 3700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 48500 55100 9 10 1 0 0 0 1
+Radio
+B 56200 47100 7900 8200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 56300 55100 9 10 1 0 0 0 1
+Arduino
+N 58100 50800 58300 50800 4
+N 58100 50000 58300 50000 4
+N 58100 50400 58300 50400 4
+N 59200 50800 59400 50800 4
+N 59200 50400 59400 50400 4
+N 59200 50000 59400 50000 4
+C 51200 45900 1 270 0 capacitor-2.sym
+{
+T 51900 45700 5 10 0 0 270 0 1
+device=POLARIZED_CAPACITOR
+T 51400 45700 5 10 1 1 0 8 1
+refdes=C1
+T 52100 45700 5 10 0 0 270 0 1
+symversion=0.1
+T 51400 45200 5 10 1 1 0 0 1
+value=4.7u
+T 51200 45900 5 10 0 0 0 0 1
+footprint=RADIAL_CAN 200
+}
+C 49600 45900 1 270 0 capacitor-2.sym
+{
+T 50300 45700 5 10 0 0 270 0 1
+device=POLARIZED_CAPACITOR
+T 49800 45700 5 10 1 1 0 8 1
+refdes=C2
+T 50500 45700 5 10 0 0 270 0 1
+symversion=0.1
+T 49800 45200 5 10 1 1 0 0 1
+value=4.7u
+T 49600 45900 5 10 0 0 0 0 1
+footprint=RADIAL_CAN 200
+}
+C 50400 53000 1 0 0 output-1.sym
+{
+T 51200 53000 5 10 1 1 0 0 1
+netname=MOSI
+T 50400 53000 5 10 0 0 0 0 1
+graphical=1
+T 50400 53000 5 10 0 0 0 0 1
+net=MOSI:1
+T 50400 53000 5 10 0 0 0 0 1
+device=none
+}
+C 51200 52900 1 180 0 input-1.sym
+{
+T 51200 52700 5 10 0 1 180 8 1
+net=MISO:1
+T 51200 52700 5 10 1 1 0 0 1
+value=MISO
+T 51200 52900 5 10 0 0 0 0 1
+graphical=1
+T 51200 52900 5 10 0 0 0 0 1
+device=none
+}
+C 50400 53300 1 0 0 output-1.sym
+{
+T 51200 53300 5 10 1 1 0 0 1
+netname=SCK
+T 50400 53300 5 10 0 0 0 0 1
+graphical=1
+T 50400 53300 5 10 0 0 0 0 1
+net=SCK:1
+T 50400 53300 5 10 0 0 0 0 1
+device=none
+}
+C 62400 53100 1 0 0 nc-right-1.sym
+{
+T 62500 53600 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 53800 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 59900 54700 1 0 0 nc-top-1.sym
+{
+T 60300 55200 5 10 0 0 0 0 1
+value=NoConnection
+T 60300 55400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 60300 54700 1 0 0 nc-top-1.sym
+{
+T 60700 55200 5 10 0 0 0 0 1
+value=NoConnection
+T 60700 55400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 62400 51100 1 0 0 nc-right-1.sym
+{
+T 62500 51600 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 51800 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 62400 49900 1 0 0 nc-right-1.sym
+{
+T 62500 50400 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 50600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 62400 50700 1 0 0 nc-right-1.sym
+{
+T 62500 51200 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 51400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 62400 50300 1 0 0 nc-right-1.sym
+{
+T 62500 50800 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 51000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 50400 52400 1 0 0 output-1.sym
+{
+T 51200 52400 5 10 1 1 0 0 1
+netname=RF_IRQ
+T 50400 52400 5 10 0 0 0 0 1
+graphical=1
+T 50400 52400 5 10 0 0 0 0 1
+net=RF_IRQ:1
+T 50400 52400 5 10 0 0 0 0 1
+device=none
+}
+C 57100 52700 1 0 0 input-1.sym
+{
+T 57100 52700 5 10 1 1 0 6 1
+netname=RF_IRQ
+T 57100 52700 5 10 0 0 0 0 1
+graphical=1
+T 57100 52700 5 10 0 0 0 0 1
+net=RF_IRQ:1
+T 57100 52700 5 10 0 0 0 0 1
+device=none
+}
+C 58900 53100 1 0 0 nc-left-1.sym
+{
+T 58900 53500 5 10 0 0 0 0 1
+value=NoConnection
+T 58900 53900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 53300 49100 1 0 0 switch-pushbutton-no-1.sym
+{
+T 53700 49400 5 10 1 1 0 0 1
+refdes=S2
+T 53700 49700 5 10 0 0 0 0 1
+device=SWITCH_PUSHBUTTON_NO
+T 53300 49100 5 10 0 0 0 0 1
+footprint=HC49
+}
+C 53100 47900 1 0 0 switch-pushbutton-no-1.sym
+{
+T 53500 48200 5 10 1 1 0 0 1
+refdes=S1
+T 53500 48500 5 10 0 0 0 0 1
+device=SWITCH_PUSHBUTTON_NO
+T 53100 47900 5 10 0 0 0 0 1
+footprint=HC49
+}
+C 62400 51500 1 0 0 nc-right-1.sym
+{
+T 62500 52000 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 52200 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 62400 51900 1 0 0 nc-right-1.sym
+{
+T 62500 52400 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 52600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 60400 47700 1 270 0 nc-right-1.sym
+{
+T 60900 47600 5 10 0 0 270 0 1
+value=NoConnection
+T 61100 47600 5 10 0 0 270 0 1
+device=DRC_Directive
+}
+C 50300 48700 1 0 0 gnd-1.sym
+C 50400 48600 1 0 0 nc-right-1.sym
+{
+T 50500 49100 5 10 0 0 0 0 1
+value=NoConnection
+T 50500 49300 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 52400 46300 1 180 1 connector3-1.sym
+{
+T 53000 46300 5 10 1 1 180 6 1
+refdes=CONN3
+T 52400 46300 5 10 0 1 180 6 1
+documentation=http://www.sparkfun.com/products/11551
+T 52300 46500 5 10 1 1 180 6 1
+device=ATSHA204
+T 52400 46300 5 10 0 0 180 6 1
+footprint=atsha204_breakout
+}
+T 52200 46600 9 10 1 0 0 0 1
+ATSHA204 Authentication Chip Breakout
+B 52100 44500 4200 2300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+C 54000 45200 1 0 0 gnd-1.sym
+C 53900 46100 1 0 0 5V-plus-1.sym
+C 54100 45700 1 0 0 io-1.sym
+{
+T 55000 45900 5 10 0 0 0 0 1
+net=ATSHA204_SDA:1
+T 54300 46300 5 10 0 0 0 0 1
+device=none
+T 54900 45700 5 10 1 1 0 0 1
+netname=ATSHA204_SDA
+T 54100 45700 5 10 0 0 0 0 1
+graphical=1
+}
+C 59400 53700 1 180 0 nc-right-1.sym
+{
+T 59300 53200 5 10 0 0 180 0 1
+value=NoConnection
+T 59300 53000 5 10 0 0 180 0 1
+device=DRC_Directive
+}
+C 62400 52300 1 0 0 nc-right-1.sym
+{
+T 62500 52800 5 10 0 0 0 0 1
+value=NoConnection
+T 62500 53000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 62400 49500 1 0 0 io-1.sym
+{
+T 63300 49700 5 10 0 0 0 0 1
+net=ATSHA204_SDA:1
+T 62600 50100 5 10 0 0 0 0 1
+device=none
+T 62300 49400 5 10 1 1 0 2 1
+netname=ATSHA204_SDA
+T 62400 49500 5 10 0 0 0 0 1
+graphical=1
+}
+C 49800 45300 1 0 0 le33-1.sym
+{
+T 50400 46000 5 10 1 1 0 0 1
+device=LE33
+T 51200 46300 5 10 1 1 0 6 1
+refdes=U2
+T 51395 45595 5 10 0 1 0 0 1
+footprint=TO92
+}
