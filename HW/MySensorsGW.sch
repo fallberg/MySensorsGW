@@ -541,11 +541,11 @@ value=NoConnection
 T 60700 55400 5 10 0 0 0 0 1
 device=DRC_Directive
 }
-C 62400 51100 1 0 0 nc-right-1.sym
+C 62400 49500 1 0 0 nc-right-1.sym
 {
-T 62500 51600 5 10 0 0 0 0 1
+T 62500 50000 5 10 0 0 0 0 1
 value=NoConnection
-T 62500 51800 5 10 0 0 0 0 1
+T 62500 50200 5 10 0 0 0 0 1
 device=DRC_Directive
 }
 C 62400 49900 1 0 0 nc-right-1.sym
@@ -686,15 +686,15 @@ value=NoConnection
 T 62500 53000 5 10 0 0 0 0 1
 device=DRC_Directive
 }
-C 62400 49500 1 0 0 io-1.sym
+C 62400 51100 1 0 0 io-1.sym
 {
-T 63300 49700 5 10 0 0 0 0 1
+T 63300 51300 5 10 0 0 0 0 1
 net=ATSHA204_SDA:1
-T 62600 50100 5 10 0 0 0 0 1
+T 62600 51700 5 10 0 0 0 0 1
 device=none
-T 62300 49400 5 10 1 1 0 2 1
+T 62600 51100 5 10 1 1 0 2 1
 netname=ATSHA204_SDA
-T 62400 49500 5 10 0 0 0 0 1
+T 62400 51100 5 10 0 0 0 0 1
 graphical=1
 }
 C 49800 45300 1 0 0 le33-1.sym
